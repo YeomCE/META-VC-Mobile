@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-@media (max-width:640px) {
     @font-face {
         font-family: 'netmarbleL';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleL.woff') format('woff');
@@ -46,6 +45,8 @@
         font-size: 15px;
         line-height: 25px;
         color: #fff;
+        max-width: 640px;
+        margin: auto;
     }
 
     /*----------------header----------------*/
@@ -57,6 +58,7 @@
         justify-content: space-between;
         position: fixed;
         top: 0;
+        left: 0;
         background-color: #fff;
         z-index: 999;
     }
@@ -131,7 +133,7 @@
         top: 80px;
         right: -50%;
         background-color: #fff;
-        width: 50%;
+        width: 20%;
         height: 100%;
         z-index: 20;
         transition: all 0.5s;
@@ -144,12 +146,34 @@
     .aside_menu ul {
         height: 100%;
         background-color: #741ead;
-        padding: 8%;
+        padding: 10%;
     }
 
     .aside_menu ul li {
         border-bottom: rgba(255, 255, 255, 0.5) 1px solid;
-        padding: 7% 10%;
+        padding: 3% 10%;
+        /* box-sizing: border-box; */
+    }
+    @media (max-width:1200px){
+        .aside_menu {
+            width: 30%;
+        }
+    }
+    @media (max-width:870px){
+        .aside_menu {
+            width: 40%;
+        }
+    }
+    @media (max-width:640px){
+        .aside_menu {
+            width: 50%;
+        }
+        .aside_menu ul li {
+            padding: 7% 10%;
+        }
+        .aside_menu ul {
+            padding: 15%;
+        }
     }
 
     .aside_menu ul li a {
@@ -202,4 +226,3 @@
     footer .footer_info img:nth-child(2) {
         width: 100%;
     }
-}

@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-@media (max-width:640px) {
     @font-face {
         font-family: 'netmarbleL';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleL.woff') format('woff');
@@ -46,6 +45,7 @@
         font-size: 15px;
         line-height: 25px;
         color: #fff;
+        background-color: rgb(238, 238, 238);
     }
 
     /*----------------banner----------------*/
@@ -205,6 +205,7 @@
     #section03 {
         padding: 13% 3% 16%;
         box-sizing: border-box;
+        background-color: white;
     }
 
     #section03 .tit {
@@ -307,4 +308,3 @@
         font-size: 18px;
         cursor: pointer;
     }
-}
