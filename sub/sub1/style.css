@@ -1,0 +1,145 @@
+/* banner */
+.banner {
+  width: 100%;
+  height: 500px;
+  background: url(images/sub01_main_bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner img {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* banner */
+
+/* aside */
+aside div {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  z-index: 5000;
+  animation: up-down 1.5s infinite ease-in-out alternate;
+}
+
+aside div img {
+  width: 80px;
+}
+
+/* aside */
+
+/* section01 */
+.sec01 {
+  position: relative;
+  left: 0;
+  margin-top: 125px;
+  margin-bottom: 200px;
+  transition: all 1.3s;
+}
+
+.sec01 div:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+/* section01 */
+
+/* section02 */
+.sec02 {
+  position: relative;
+  left: -800px;
+  margin-bottom: 200px;
+  transition: all 1.8s;
+}
+
+.sec02>div:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+.sec02 div {
+  width: 255px;
+  display: flex;
+  margin-right: 60px;
+}
+
+.sec02 div div {
+  display: flex;
+  flex-direction: column;
+}
+
+.sec02 div div img:nth-child(1) {
+  margin-bottom: 60px;
+  transition: all 0.8s;
+}
+
+.sec02 div div img:nth-child(1):hover {
+  transform: scale(1.1);
+}
+
+.sec02 div div img:nth-child(2) {
+  width: 255px;
+}
+
+/* section02 */
+
+/* section03 */
+.sec03 {
+  width: 100%;
+  height: 600px;
+  background: url(images/03_bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sec03 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* section03 */
+
+/* section04 */
+.sec04 {
+  width: 100%;
+  height: 1050px;
+  background: url(images/04_bg.png);
+  position: relative;
+  padding-top: 200px;
+  transition: all 1.3s;
+}
+
+.sec04_cont {
+  position: relative;
+  left: -800px;
+  transition: all 2.5s;
+}
+
+.sec04 div:nth-child(1) {
+  margin-bottom: 100px;
+}
+
+.sec04 div:nth-child(2) {
+  display: flex;
+  margin-bottom: 200px
+}
+
+.sec04 div:nth-child(2) div {
+  margin-right: 30px;
+}
+
+.sec04 div:nth-child(2) div:nth-child(2) {
+  margin-right: 13px;
+}
+
+.sec04 .sec04_bg_cont {
+  position: absolute;
+  top: -40px;
+  right: 60px;
+  animation: up-down 1.0s infinite ease-in-out alternate;
+}
+
+/* section04 */
