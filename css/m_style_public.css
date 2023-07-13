@@ -131,7 +131,7 @@
         display: block;
         position: fixed;
         top: 80px;
-        right: -50%;
+        right:-20%;
         background-color: #fff;
         width: 20%;
         height: 100%;
@@ -156,16 +156,19 @@
     }
     @media (max-width:1200px){
         .aside_menu {
+            right: -30%;
             width: 30%;
         }
     }
     @media (max-width:870px){
         .aside_menu {
+            right: -40%;
             width: 40%;
         }
     }
     @media (max-width:640px){
         .aside_menu {
+            right: -50%;
             width: 50%;
         }
         .aside_menu ul li {
