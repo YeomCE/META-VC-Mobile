@@ -2,84 +2,85 @@
 /* banner */
 .banner {
   width: 100%;
-  height: 500px;
-  background: url(images/sub04_main_bg.png) no-repeat;
-  background-size: cover;
-  position: relative;
+  margin-top: 80px;
 }
 
 .banner img {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
 }
-
 /* banner */
-
-/* aside */
-aside div {
-  position: fixed;
-  bottom: 20px;
-  right: 60px;
-  z-index: 5000;
-  animation: up-down 1.5s infinite ease-in-out alternate;
-}
-
-aside div img {
-  width: 80px;
-}
-/* aside */
 
 /* section01 */
 .sec01 {
-  position: relative;
-  /* right: -800px; */
-  padding: 200px 0;
-  transition: all 1.3s;
-  /* opacity: 0; */
+  width: 100%;
+  padding: 16% 0;
+  background-color: white;
+}
+
+.sec01 div {
+margin: 0px 20px;
+}
+
+.sec01 div img {
+  width: 100%;
 }
 
 .sec01 div:nth-child(1) {
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 /* section01 */
 
 /* section02 */
 .sec02 {
+  /* width: 100; */
+  padding: 16% 0;
+  background: #1b1b1b;
+}
+
+.sec02 div:nth-child(1) {
+  margin-bottom: 10%;
+}
+
+.sec02 div,form {
+  padding: 0 20px;
+}
+
+.sec02 div:last-child {
+  padding: 0;
+}
+
+.sec02 div img {
   width: 100%;
-  position: relative;
-  background: #1b1b1b url(images/02_bg.png) no-repeat;
-  background-position: 52% 60%;
-  padding: 200px 0;
+}
+
+.sec02 div img {
+  width: 100%;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  margin-top: 158px;
+  margin-top: 10%;
 }
 
 form input {
-  width: 475px;
-  height: 50px;
+  width: 100%;
+  height: 40px;
   background: #323232;
   color: #fff;
   border: none;
   margin-bottom: 10px;
-  border-radius: 30px;
+  border-radius: 20px;
   padding-left: 25px;
   box-sizing: border-box;
 }
 
 form textarea {
-  width: 475px;
-  height: 200px;
+  width: 100%;
+  height: 130px;
   background: #323232;
   color: #fff;
   border: none;
-  margin-bottom: 10px;
-  border-radius: 30px;
+  margin-bottom: 20px;
+  border-radius: 20px;
   padding: 20px 25px;
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
@@ -94,26 +95,14 @@ form textarea::-webkit-input-placeholder {
 }
 
 form .send input {
-  width: 475px;
-  height: 50px;
-  border: 2px solid #a0a0a0;
-  border-radius: 30px;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to left, #4fe040, #40e0d0);
+  border-radius: 20px;
   color: #fff;
   text-align: center;
-  background: transparent;
   padding: 0;
   cursor: pointer;
 }
 
-form .send input:hover {
-  background: linear-gradient(to left, #4fe040, #40e0d0);
-  border: none;
-}
-
-.sec02_bg_cont {
-  position: absolute;
-  top: -100px;
-  right: 170px;
-  animation: up-down 1.3s infinite ease-in-out alternate;
-}
 /* section02 */

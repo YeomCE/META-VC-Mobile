@@ -5,46 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meta VC</title>
-    <link href="../../images/icon.png" rel="icon" type="image/png" sizes="32x32">
+    <link href="/images/favicon.png" rel="icon">
 
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="/css/m_style_public.css">
+    <link rel="stylesheet" href="style.css">
+
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="sub04.js"></script>
-
-    <link rel="stylesheet" href="../../css/style_public.css" />
-    <link rel="stylesheet" href="style.css" />
-
+    <script src="/script/mobile_public.js"></script>
+    <script src="mobile_sub4.js"></script>
 </head>
 
+
 <body>
-    <header>
-        <!-- HEADER NAV -->
-        <div class="top_navi">
-            <nav class="inner">
-                <h1><a href="../../index.html"><img src="images/logo.png" alt="logo"></a></h1>
-                <ul>
-                    <li><a href="../sub1/sub1_AboutUs.html">About Us</a></li>
-                    <li><a href="../sub2/sub2_Technology.html">Technology</a></li>
-                    <li><a href="../sub3/sub3_Work.html">Works</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=iZOtXwupCbk" target="_blank">Introduce</a></li>
-                    <li><a href="#">Let's TALK</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- HEADER NAV -->
+    <!-- header mobile-->
+    <header class="mobile">
+        <h1><a href="/index.html"><img src="/images/header_logo.png" alt="logo"></a></h1>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
     </header>
 
+    <!-- aside_menu -->
+    <div class="aside_menu">
+        <ul>
+            <li><a href="/sub/sub1/sub1_AboutUs.html">About Us</a></li>
+            <li><a href="/sub/sub2/sub2_Technology.html">Technology</a></li>
+            <li><a href="/sub/sub3/sub3_Work.html">Works</a></li>
+            <li><a href="https://www.youtube.com/watch?v=iZOtXwupCbk" target="_blank">Introduce</a></li>
+            <li><a href="/sub/sub4/sub4_LetsTalk.html">Let's TALK</a></li>
+            <li class="kakao"><a href="http://pf.kakao.com/_pLtzG/chat"><img src="/images/kakao.png"> 카카오상담</a></li>
+        </ul>
+    </div>
+    <div class="aside_menu_back">
+    </div>
 
-    <!-- banner -->
-    <div class="banner"><img src="images/sub04_main_tit.png" alt="background"></div>
-    <!--banner -->
 
-    <aside>
-        <div><a href="#"><img src="images/top_on.png" alt="top"></a></div>
-    </aside>
+    <!-- title -->
+    <div class="banner"><img src="images/sub04_main.png" alt="sub01_main"></div>
+    <!-- title -->
 
     <!-- section01 -->
-    <section class="sec01 inner">
+    <section class="sec01">
         <div><img src="images/01_tit.png" alt="section01_title"></div>
         <div><img src="images/01_img.png" alt="section01_content"></div>
     </section>
@@ -52,39 +55,32 @@
 
     <!-- section02 -->
     <section class="sec02">
-        <div class="inner">
-            <div><img src="images/02_tit.png" alt="section02_title"></div>
-            <form name="form" method="post" action="">
-                <input type="text" name="on_name" id="on_name" placeholder="Name">
-                <input type="number" name="on_phone" id="on_phone" placeholder="Phone number">
-                <input type="email" name="on_email" id="on_email" placeholder="E-mail">
-                <textarea name="on_content" id="on_detail" placeholder="Detail" cols="30" row="20"></textarea>
-                <div class="send"><input type="button" name="send" id="send" value="SEND" onClick="fmcheck()"></input>
-                    <input type="hidden" name="act" value="ok">
-                </div>
-            </form>
-        </div>
-        <div class="sec02_bg_cont"><img src="images/02_bg_3d.png" alt="background_content"></div>
+        <div><img src="images/02_tit.png" alt="section01_title"></div>
+        <div><img src="images/02_img.png" alt="section01_content"></div>
+        <form name="form" method="post" action="">
+            <input type="text" name="on_name" id="on_name" placeholder="Name">
+            <input type="number" name="on_phone" id="on_phone" placeholder="Phone number">
+            <input type="email" name="on_email" id="on_email" placeholder="E-mail">
+            <textarea name="on_content" id="on_detail" placeholder="Detail" cols="30" row="20"></textarea>
+            <div class="send"><input type="button" name="send" id="send" value="SEND" onClick="fmcheck()"></input>
+                <input type="hidden" name="act" value="ok">
+            </div>
+        </form>
     </section>
     <!-- section02 -->
 
-
+    <!-- 하단메뉴 -->
     <footer>
-        <div class="footer_cont inner">
-            <div class="logo"><a href="../../index.html"><img src="images/logo.png" alt="logo"></a></div>
-            <div class="footer_text">
-                <div>부산광역시 금정구 오륜대로 57 부산가톨릭대학교 C004 메타VC</div>
-                <div class="footer_adress">
-                    <div>TEL 051.702.7332</div>
-                    <div>FAX 051.702.7338</div>
-                    <div>mvc@metavc.kr</div>
-                </div>
-            </div>
-            <div class="kakao"><a href="http://pf.kakao.com/_SEvgb" target="_blank"><img src="images/kakao.png"
-                        alt="logo"></a></div>
-            <button><a href="#">Mobile</a></button>
+        <ul class="footer_btn">
+            <li><a href="tel:010-8385-2770"><img src="images/call_btn.png" alt="call_btn"></a></li>
+            <li><a href="mailto:yeomce2770@gmail.com"><img src="images/mail_btn.png" alt="mail_btn"></a></li>
+            <li><a href="http://pf.kakao.com/_pLtzG/chat"><img src="images/kakao_btn.png" width="100%" alt="pc_btn"></a>
+            </li>
+        </ul>
+        <div class="footer_info">
+            <img src="images/ft_logo.png" alt="ft_logo">
+            <img src="images/ft_text.png" alt="ft_text">
         </div>
-        <div class="copy_right">Copyright (c) MetaVC CO.LTD All rights reserved.</div>
     </footer>
 </body>
 

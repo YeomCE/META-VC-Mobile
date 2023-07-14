@@ -1,29 +1,5 @@
-window.onload = function () {
 
-    /*mobile 헤더*/
-    var jbOffset = $('.mobile').offset();
-
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > jbOffset.top) {
-            $('.mobile').addClass('fixed_mobile');
-        } else {
-            $('.mobile').removeClass('fixed_mobile');
-        }
-    });
-    /*mobile 헤더*/
-
-
-
-    /*mobile aside*/
-    $('header ul').on('click', function () {
-        $(this).toggleClass('toggle')
-        $('.aside_menu').toggleClass('toggle')
-        $('.aside_menu_back').toggleClass('toggle')
-    });
-    /*mobile aside*/
-
-
-
+$(function(){
     /*sec02 tap*/
     $('.sec02_list li:nth-child(1)').on('click', function () {
         $('.sec02_img a:nth-child(1)').addClass('sec02_img_on')
@@ -109,5 +85,4 @@ window.onload = function () {
         }
         f.submit();
     }) 
-    
-}
+})
